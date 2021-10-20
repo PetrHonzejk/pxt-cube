@@ -13,21 +13,21 @@ input.onGesture(Gesture.LogoUp, function on_logo_up() {
     if (sides == 6) {
         sides = 10
         basic.showLeds(`
-                            # . . . #
-                            . # . # .
-                            # . . . #
-                            . # . # .
-                            # . . . #
-                            `)
+        # . . . #
+        . # . # .
+        # . . . #
+        . # . # .
+        # . . . #
+        `)
     } else {
         sides = 6
         basic.showLeds(`
-                            # . . . #
-                            . . . . .
-                            # . . . #
-                            . . . . .
-                            # . . . #
-                            `)
+        # . . . #
+        . . . . .
+        # . . . #
+        . . . . .
+        # . . . #
+        `)
     }
     
 })

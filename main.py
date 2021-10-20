@@ -16,21 +16,21 @@ def on_logo_up():
     if sides == 6:
         sides = 10
         basic.show_leds("""
-                            # . . . #
-                            . # . # .
-                            # . . . #
-                            . # . # .
-                            # . . . #
-                            """)
+        # . . . #
+        . # . # .
+        # . . . #
+        . # . # .
+        # . . . #
+        """)
     else:
         sides = 6
         basic.show_leds("""
-                            # . . . #
-                            . . . . .
-                            # . . . #
-                            . . . . .
-                            # . . . #
-                            """)
+        # . . . #
+        . . . . .
+        # . . . #
+        . . . . .
+        # . . . #
+        """)
 input.on_gesture(Gesture.LOGO_UP, on_logo_up)
 
 def on_gesture_shake():
