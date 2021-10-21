@@ -46,9 +46,9 @@ def on_gesture_shake():
         if number == 2:
             basic.show_leds("""
             . . . . .
+            . # . . .
             . . . . .
-            . # . # .
-            . . . . .
+            . . . # .
             . . . . .
             """)
         if number == 3:

@@ -48,9 +48,9 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
         if (number == 2) {
             basic.showLeds(`
             . . . . .
+            . # . . .
             . . . . .
-            . # . # .
-            . . . . .
+            . . . # .
             . . . . .
             `)
         }
