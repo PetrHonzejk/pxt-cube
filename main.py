@@ -2,9 +2,6 @@ def heartbeat():
     pass
 basic.forever(heartbeat)
 
-enabled = False
-sides = 6
-
 def on_button_pressed_a():
     global enabled
     enabled = True
@@ -119,7 +116,7 @@ def on_gesture_shake():
             # . . . #
             """)
         for a in range(number):
-            music.play_tone(Note.C, music.beat(0.5))
+            music.play_tone(Note.C, music.beat(0.4))
             basic.pause(100)
         enabled = False
         basic.pause(1000)
@@ -130,6 +127,11 @@ def on_gesture_shake():
         . # . . .
         . . # . .
         """)
+        basic.pause(1000)
+        basic.clear_screen()
     else:
         basic.show_icon(IconNames.NO)
 input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+
+enabled = False
+sides = 6

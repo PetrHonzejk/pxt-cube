@@ -1,8 +1,6 @@
 basic.forever(function heartbeat() {
     
 })
-let enabled = false
-let sides = 6
 input.onButtonPressed(Button.A, function on_button_pressed_a() {
     
     enabled = true
@@ -138,7 +136,7 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
         }
         
         for (let a = 0; a < number; a++) {
-            music.playTone(Note.C, music.beat(0.5))
+            music.playTone(Note.C, music.beat(0.4))
             basic.pause(100)
         }
         enabled = false
@@ -150,8 +148,12 @@ input.onGesture(Gesture.Shake, function on_gesture_shake() {
         . # . . .
         . . # . .
         `)
+        basic.pause(1000)
+        basic.clearScreen()
     } else {
         basic.showIcon(IconNames.No)
     }
     
 })
+let enabled = false
+let sides = 6
