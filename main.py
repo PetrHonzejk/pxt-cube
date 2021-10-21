@@ -2,13 +2,13 @@ def heartbeat():
     pass
 basic.forever(heartbeat)
 
-def on_button_pressed_a():
+def button_a():
     global enabled
     enabled = True
     basic.show_icon(IconNames.YES)
-input.on_button_pressed(Button.A, on_button_pressed_a)
+input.on_button_pressed(Button.A, button_a)
 
-def on_logo_up():
+def logo():
     global sides
     if sides == 6:
         sides = 10
@@ -28,9 +28,9 @@ def on_logo_up():
         . . . . .
         # . . . #
         """)
-input.on_gesture(Gesture.LOGO_UP, on_logo_up)
+input.on_gesture(Gesture.LOGO_UP, logo)
 
-def on_gesture_shake():
+def shake():
     global enabled
     global sides
     if enabled:
@@ -131,7 +131,7 @@ def on_gesture_shake():
         basic.clear_screen()
     else:
         basic.show_icon(IconNames.NO)
-input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+input.on_gesture(Gesture.SHAKE, shake)
 
 enabled = False
 sides = 6

@@ -1,12 +1,12 @@
 basic.forever(function heartbeat() {
     
 })
-input.onButtonPressed(Button.A, function on_button_pressed_a() {
+input.onButtonPressed(Button.A, function button_a() {
     
     enabled = true
     basic.showIcon(IconNames.Yes)
 })
-input.onGesture(Gesture.LogoUp, function on_logo_up() {
+input.onGesture(Gesture.LogoUp, function logo() {
     
     if (sides == 6) {
         sides = 10
@@ -29,7 +29,7 @@ input.onGesture(Gesture.LogoUp, function on_logo_up() {
     }
     
 })
-input.onGesture(Gesture.Shake, function on_gesture_shake() {
+input.onGesture(Gesture.Shake, function shake() {
     let number: number;
     
     
